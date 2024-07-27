@@ -67,7 +67,7 @@ struct MegaFuzzTest  : public PluginTest
 
             for (;;)
             {
-                const int subBlockSize = 1 + r.nextInt (blockSize);
+                const int subBlockSize = r.nextInt (blockSize + 1);
 
                 // TODO: add synth stuff back in (trigger notes at random points)
                 // // Add a random note on if the plugin is a synth
